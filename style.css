@@ -323,3 +323,8 @@ button {
   display: grid;
   place-items: center;
 }
+.test-img {
+  width: 50%;
+  height: 40%;
+  border-radius: 50%;
+}
