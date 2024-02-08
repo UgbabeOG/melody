@@ -1,0 +1,243 @@
+body {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.image-logo {
+  width: 24px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+.nav-toggle {
+  display: none;
+}
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav-toggle-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 10;
+    display: none; /* Initially hidden */
+  }
+
+  .nav-toggle:checked + .nav ul {
+    display: block;
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+.booking-form {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.about-us,
+.testimonials {
+  margin-top: 20px;
+}
+.about-list {
+  list-style: none;
+}
+.testimonials {
+  margin-top: 50px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 20px); /* Adjust width as needed */
+}
+
+.testimonial-card p {
+  margin-bottom: 10px;
+}
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.gold-star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.gold-star.empty {
+  background-color: #ddd;
+}
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative; /* Use relative positioning for layering */
+}
+
+.star:before,
+.star:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star:before {
+  background-color: gold;
+  width: 100%;
+  height: 50%;
+  transform: rotate(45deg);
+  z-index: 2; /* Layer on top for star shape */
+}
+
+.star:after {
+  background-color: gold;
+  width: 50%;
+  height: 100%;
+  transform: rotate(-45deg);
+}
+
+.star.empty {
+  background-color: #ddd;
+}
+
+.star.empty:before,
+.star.empty:after {
+  background-color: #ddd;
+}
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 100%;
+  } /* 1 card per row on smaller screens */
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    font-size: 0.85em;
+  } /* Reduce font size for better readability */
+}
+.banner {
+  height: 50vh;
+  background-size: cover; /* Ensure image covers the section fully */
+  background-position: center; /* Center the image */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content within the header */
+  background-image: url(/Bard_Generated_Image.jpeg);
+}
+.banner h2 {
+  color: white; /* Ensure text is visible against the background */
+  font-size: 4rem; /* Adjust font size as needed */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add text shadow for better readability */
+}
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 2rem;
+  }
+}
