@@ -1,6 +1,143 @@
 body {
-    box-sizing: border-box;
-    font-family: sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+}
+button {
+  color: #edf0f2;
+  background-color: #4f2555;
+  border-radius: 4px;
+  text-align: center;
+}
+.header {
+  background-color: #4f2555;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: lawngreen;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.image-logo {
+  width: 24px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #edf0f2;
+}
+
+.nav a:hover {
+  color: #48b5e3;
+}
+.nav-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
   }
+
+  .nav-toggle {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav-toggle-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f2;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 10;
+    display: none; /* Initially hidden */
+  }
+
+  .nav-toggle:checked + .nav ul {
+    display: block;
+  }
+}
+
+main {
+  padding: 20px;
+}
+.cta {
+  max-width: max-content;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.banner-quote {
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover; /* Ensure image covers the section fully */
+  background-position: center; /* Center the image */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content within the header */
+  background-image: url(/csm_challenger_850__1__0b5710941b-1140x495.jpg);
+}
+.banner-quote h2 {
+  color: rgba(
+    230,
+    215,
+    215,
+    0.777
+  ); /* Ensure text is visible against the background */
+  font-size: 4rem; /* Adjust font size as needed */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add text shadow for better readability */
+}
+@media (max-width: 768px) {
+  .banner-quote h2 {
+    font-size: 2rem;
+  }
+}

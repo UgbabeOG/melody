@@ -8,12 +8,12 @@ body {
 h2 {
   text-align: center;
 }
-button {
+/* button {
   color: #edf0f2;
   background-color: #4f2555;
   border-radius: 4px;
   text-align: center;
-}
+} */
 .header {
   background-color: #4f2555;
   padding: 20px;
@@ -280,7 +280,8 @@ button {
 }
 
 /* Modal content */
-.modal-content {border-radius: 4px;
+.modal-content {
+  border-radius: 4px;
   cursor: wait;
   gap: 2rem;
   flex-direction: column;

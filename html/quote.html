@@ -35,8 +35,8 @@
     <meta name="twitter:image" content="../fav.jpeg" />
     <link rel="shortcut icon" type="image/x-icon" href="../fav.jpeg" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
@@ -59,12 +59,14 @@
           <span class="nav-toggle-bar"></span>
         </button>
         <div class="buttons">
-          <a href="#" class="quote-button">Request a Quote</a>
-          <a href="#" class="login-button">Log In</a>
+          <a href="#" class="cta">Request a Quote</a>
+          <a href="#" class="cta">Log In</a>
         </div>
       </div>
     </header>
-
+    <section class="banner-quote">
+      <h2>Fly in style - FlyPrivate</h2>
+    </section>
     <main>
       <section class="hero">
         <div class="container">
@@ -76,15 +78,10 @@
             </p>
             <a href="#" class="quote-button">Request a Quote</a>
           </div>
-          <div class="hero-image">
-            <img
-              src="path/to/your/image.jpg"
-              alt="Private jet flying over city"
-            />
-          </div>
         </div>
       </section>
-
+      
+      
       <section class="forms">
         <div class="container">
           <h2>Get a Quote / Contact Us</h2>
@@ -130,7 +127,7 @@
                 <label for="message">Special Request:</label>
                 <textarea id="message" name="message"></textarea>
               </div>
-              <button type="submit">Submit Quote Request</button>
+              <button class="cta" type="submit">Submit Quote Request</button>
             </form>
 
             <form id="contact-form booking-form">
@@ -147,7 +144,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message"></textarea>
               </div>
-              <button type="submit">Send Message</button>
+              <button class="cta" type="submit">Send Message</button>
             </form>
           </div>
         </div>
