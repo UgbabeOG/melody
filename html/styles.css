@@ -14,10 +14,13 @@ button {
   text-align: center;
 }
 .header {
+  position: sticky;
+  top: 0;
   background-color: #4f2555;
   padding: 20px;
 }
 .container {
+  height: 5vh;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -25,10 +28,10 @@ button {
 }
 
 .logo {
-  color: lawngreen;
+  color: #4caf50;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: wavy;
 }
 .image-logo {
   width: 24px;
@@ -51,7 +54,7 @@ button {
 }
 
 .nav a:hover {
-  color: #48b5e3;
+  color: #4caf50;
 }
 .nav-toggle {
   display: none;
@@ -115,6 +118,20 @@ main {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
+}
+.quote-form {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, textarea, select {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 .banner-quote {
   background-repeat: no-repeat;
