@@ -35,7 +35,9 @@
     <meta name="twitter:image" content="/fav.jpeg" />
     <link rel="shortcut icon" type="image/x-icon" href="/fav.jpeg" />
     <meta charset="UTF-8" />
+    <script src="/all.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/all.min.css" />
   </head>
   <body>
     <header class="header">
@@ -75,11 +77,17 @@
 
         <h2 class="headers">Book Your Private Jet Today</h2>
         <form id="booking-form">
-          <label for="origin">Origin:</label>
+          <label for="origin"
+            ><i class="fa fa-plane-departure"></i>Pick Up Location:</label
+          >
           <input type="text" id="origin" name="origin" required />
-          <label for="destination">Destination:</label>
+          <label for="destination"
+            ><i class="fa fa-plane-arrival"></i>Destination:</label
+          >
           <input type="text" id="destination" name="destination" required />
-          <label for="passengers">Passengers:</label>
+          <label for="passengers"
+            ><i class="fa fa-person"></i> Passengers:</label
+          >
           <input
             type="number"
             id="passengers"
@@ -87,8 +95,17 @@
             min="1"
             required
           />
-          <label for="date">Departure Date:</label>
-          <input class="date" type="date" id="date" name="date" required />
+          <label for="date"
+            ><i class="fa fa-calendar"></i> Departure Date:</label
+          >
+          <input
+            class="block"
+            type="date"
+            id="date"
+            name="date"
+            required
+            placeholder="Choose date"
+          />
           <button type="submit" class="cta">Request Quote</button>
         </form>
       </section>
@@ -133,7 +150,8 @@
       <section class="testimonials">
         <h2 class="headers">Client Testimonials</h2>
         <div class="testimonial-cards">
-          <div class="testimonial-card"><img class="test-img" src="/woman.jpeg" alt="">
+          <div class="testimonial-card">
+            <img class="test-img" src="/woman.jpeg" alt="" />
             <p>
               "Flying private with FlyPrivate was an absolute game-changer. The
               seamless booking process, comfortable aircraft, and attentive crew
@@ -148,7 +166,8 @@
               <span class="gold-star"></span>
             </div>
           </div>
-          <div class="testimonial-card"><img class="test-img" src="/white.jpeg" alt="">
+          <div class="testimonial-card">
+            <img class="test-img" src="/white.jpeg" alt="" />
             <p>
               "FlyPrivate exceeded my expectations in every way. The
               personalized service and attention to detail ensured a stress-free
@@ -163,7 +182,8 @@
               <span class="gold-star"></span>
             </div>
           </div>
-          <div class="testimonial-card"><img class="test-img" src="/black.jpeg" alt="">
+          <div class="testimonial-card">
+            <img class="test-img" src="/black.jpeg" alt="" />
             <p>
               "From booking to touchdown, the FlyPrivate experience was
               exceptional. The personalized service and attention to detail

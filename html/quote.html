@@ -35,7 +35,9 @@
     <meta name="twitter:image" content="../fav.jpeg" />
     <link rel="shortcut icon" type="image/x-icon" href="../fav.jpeg" />
     <meta charset="UTF-8" />
+    <script src="/all.min.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/all.min.css" />
   </head>
   <body>
     <header class="header">
@@ -82,10 +84,12 @@
       <section class="forms">
         <div class="containers">
           <div class="quote-form color mb">
-            <h2>Estimated price: $798,445</h2>
+            <h2>Estimated price: $25,445</h2>
 
             <form class="form-group" id="payment-form">
-              <label for="origin">Origin:</label>
+              <label for="origin"
+                ><i class="fa fa-plane-departure"></i>Pick Up Location:</label
+              >
               <input
                 class="group"
                 type="text"
@@ -93,7 +97,9 @@
                 name="origin"
                 disabled
               />
-              <label for="destination">Destination:</label>
+              <label for="destination"
+                ><i class="fa fa-plane-arrival"></i>Destination:</label
+              >
               <input
                 class="group"
                 type="text"
@@ -101,7 +107,9 @@
                 name="destination"
                 disabled
               />
-              <label for="passengers">Passengers:</label>
+              <label for="passengers"
+                ><i class="fa fa-person"></i> Passengers:</label
+              >
               <input
                 class="group"
                 type="number"
@@ -109,7 +117,9 @@
                 name="passengers"
                 disabled
               />
-              <label for="date">Departure Date:</label>
+              <label for="date"
+                ><i class="fa fa-calendar"></i> Departure Date:</label
+              >
               <input
                 class="group"
                 type="date"

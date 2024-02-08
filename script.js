@@ -42,3 +42,13 @@ function validateBookingFormAndRedirect(event) {
 // Attach to form submission event
 const form = document.getElementById("booking-form");
 form.addEventListener("submit", validateBookingFormAndRedirect);
+const dateInput = document.getElementById("date");
+
+// Get the current date in YYYY-MM-DD format
+const today = new Date().toISOString().split('T')[0];
+
+// Set the minimum date for the input field
+dateInput.min = today;
+
+// Set the placeholder to the current date
+dateInput.placeholder = today;
