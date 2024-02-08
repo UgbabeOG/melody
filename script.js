@@ -20,7 +20,7 @@ function validateBookingFormAndRedirect(event) {
     document.getElementById("loading-modal").style.display = "none";
 
     // Redirect to success page (replace with your actual URL)
-    window.location.href =" /qoute.html";
+    window.location.href = " qoute.html";
   }, 3000); // After 3 seconds
 
   // Additional form processing or API calls could go here before redirecting
