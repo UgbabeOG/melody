@@ -82,25 +82,26 @@
 
       <section class="forms">
         <div class="containers">
-          <div class="quote-form color">
+          <div class="quote-form color mb">
             <h2>Price From</h2>
 
-            <form class="form-group">
+            <form class="form-group" id="payment-form">
               <label for="origin">Origin:</label>
-              <input type="text" id="origin" name="origin" required />
+              <input type="text" id="payment-origin" name="origin" disabled />
               <label for="destination">Destination:</label>
-              <input type="text" id="destination" name="destination" required />
+              <input
+                type="text"
+                id="payment-destination"
+                name="destination"
+              disabled />
               <label for="passengers">Passengers:</label>
               <input
                 type="number"
-                id="passengers"
+                id="payment-passengers"
                 name="passengers"
-                min="1"
-                required
-              />
+              disabled />
               <label for="date">Departure Date:</label>
-              <input class="date" type="date" id="date" name="date" required />
-              <button type="submit" class="cta">Request Quote</button>
+              <input class="date" type="date" id="payment-date" name="date" disabled />
             </form>
           </div>
           <div class="booking-form">
@@ -155,6 +156,6 @@
     <footer>
       <p>&copy; 2024 FlyPrivate</p>
     </footer>
-    <script defer src="script.js"></script>
+    <script defer src="/html/payment.js"></script>
   </body>
 </html>
