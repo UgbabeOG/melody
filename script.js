@@ -28,7 +28,6 @@ function validateBookingFormAndRedirect(event) {
     window.location.href = "html/quote.html";
   }, 3000); // After 3 seconds
 
-  // Handle potential errors during form processing or API calls
   try {
     // Your form processing or API call logic here
   } catch (error) {

@@ -148,6 +148,13 @@ footer {
   display: block;
   margin-bottom: 5px;
 }
+.group  {
+  color: #f5f5f5;
+  font-weight: 700;
+  font-size: large;
+  text-transform: uppercase;
+  width: min-content;
+}
 
 .form-group input,
 textarea,
