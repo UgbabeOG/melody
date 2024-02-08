@@ -78,13 +78,25 @@
         <h2 class="headers">Book Your Private Jet Today</h2>
         <form id="booking-form">
           <label for="origin"
-            ><i class="fa fa-plane-departure"></i>Pick Up Location:</label
+            ><i class="fa fa-plane-departure"></i> Departure:</label
           >
-          <input type="text" id="origin" name="origin" required />
+          <input
+            type="text"
+            id="origin"
+            name="origin"
+            required
+            placeholder="Pick Up Location"
+          />
           <label for="destination"
-            ><i class="fa fa-plane-arrival"></i>Destination:</label
+            ><i class="fa fa-plane-arrival"></i> Destination:</label
           >
-          <input type="text" id="destination" name="destination" required />
+          <input
+            type="text"
+            id="destination"
+            name="destination"
+            required
+            placeholder="Drop Off Location"
+          />
           <label for="passengers"
             ><i class="fa fa-person"></i> Passengers:</label
           >
@@ -94,6 +106,7 @@
             name="passengers"
             min="1"
             required
+            placeholder="1"
           />
           <label for="date"
             ><i class="fa fa-calendar"></i> Departure Date:</label
