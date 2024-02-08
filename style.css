@@ -8,8 +8,14 @@ body {
 h2 {
   text-align: center;
 }
+button {
+  color: #edf0f2;
+  background-color: #4f2555;
+  border-radius: 4px;
+  text-align: center;
+}
 .header {
-  background-color: #f0f0f0;
+  background-color: #4f2555;
   padding: 20px;
 }
 
@@ -21,6 +27,7 @@ h2 {
 }
 
 .logo {
+  color: lawngreen;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -42,11 +49,11 @@ h2 {
 .nav a {
   padding: 10px;
   text-decoration: none;
-  color: #333;
+  color: #edf0f2;
 }
 
 .nav a:hover {
-  color: #007bff;
+  color: #48b5e3;
 }
 .nav-toggle {
   display: none;
@@ -69,7 +76,7 @@ h2 {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #edf0f2;
     margin: 5px;
   }
 }
@@ -112,7 +119,7 @@ main {
 }
 
 .booking-form input {
-  width: 100%;
+  width: 80%;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -121,16 +128,13 @@ main {
 .testimonials {
   margin-top: 20px;
 }
-.about-list {
-  list-style: none;
-}
+
 .testimonials {
   margin-top: 50px;
 }
 
 .testimonial-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -149,7 +153,7 @@ main {
 .rating {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .gold-star {
@@ -157,56 +161,26 @@ main {
   width: 20px;
   height: 20px;
   background-color: gold;
-  border-radius: 50%;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
   font-size: 16px;
   line-height: 20px;
   text-align: center;
 }
 
-.gold-star.empty {
-  background-color: #ddd;
-}
-.star {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  position: relative; /* Use relative positioning for layering */
-}
-
-.star:before,
-.star:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.star:before {
-  background-color: gold;
-  width: 100%;
-  height: 50%;
-  transform: rotate(45deg);
-  z-index: 2; /* Layer on top for star shape */
-}
-
-.star:after {
-  background-color: gold;
-  width: 50%;
-  height: 100%;
-  transform: rotate(-45deg);
-}
-
-.star.empty {
-  background-color: #ddd;
-}
-
-.star.empty:before,
-.star.empty:after {
-  background-color: #ddd;
-}
 footer {
-  background-color: #eee;
+  color: aquamarine;
+  background-color: #4f2555;
   text-align: center;
   padding: 10px;
 }
@@ -221,8 +195,15 @@ footer {
   .testimonial-card {
     font-size: 0.85em;
   } /* Reduce font size for better readability */
+  .testimonial-cards {
+    flex-wrap: wrap;
+  } /* Reduce font size for better readability */
+  .about-us {
+    flex-wrap: wrap;
+  } /* Reduce font size for better readability */
 }
 .banner {
+  background-repeat: no-repeat;
   height: 50vh;
   background-size: cover; /* Ensure image covers the section fully */
   background-position: center; /* Center the image */
@@ -232,7 +213,12 @@ footer {
   background-image: url(/Bard_Generated_Image.jpeg);
 }
 .banner h2 {
-  color: white; /* Ensure text is visible against the background */
+  color: rgba(
+    230,
+    215,
+    215,
+    0.777
+  ); /* Ensure text is visible against the background */
   font-size: 4rem; /* Adjust font size as needed */
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add text shadow for better readability */
 }
@@ -240,4 +226,32 @@ footer {
   .banner h2 {
     font-size: 2rem;
   }
+}
+.headers {
+  color: #4caf50;
+  padding: 10px;
+  text-align: center;
+}
+.section {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.section img {
+  width: 60%;
+  border-radius: 8px;
+}
+.about-us {
+  display: flex;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
