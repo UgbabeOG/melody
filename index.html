@@ -10,17 +10,26 @@
     <meta name="author" content="Ugbabe Choco" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:title" content="FlyPrivate | International Luxury Jets for Charter" />
+    <meta
+      property="og:title"
+      content="FlyPrivate | International Luxury Jets for Charter"
+    />
     <meta
       property="og:description"
       content="Book and charter your luxury jet with FlyPrivate "
     />
     <meta property="og:image" content="/Bard_Generated_Image.jpeg" />
     <meta property="og:url" content="https://flyprivate.netlify.app/" />
-    <meta name="twitter:title" content="lyPrivate | International Luxury Jets for Charter" />
-    <meta name="twitter:description" content="International Luxury Jets for Charter" />
+    <meta
+      name="twitter:title"
+      content="FlyPrivate | International Luxury Jets for Charter"
+    />
+    <meta
+      name="twitter:description"
+      content="International Luxury Jets for Charter"
+    />
     <meta name="twitter:card" content="/fav.jpeg" />
-    <meta name="twitter:image" content="https://flyprivate.netlify.app/" />
+    <meta name="twitter:image" content="/fav.jpeg" />
     <link rel="shortcut icon" type="image/x-icon" href="/fav.jpeg" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
@@ -52,6 +61,13 @@
     </section>
     <main>
       <section class="booking-form">
+        <div id="loading-modal" class="modal">
+          <div class="modal-content">
+            <div class="custom-loader"></div>
+            <p>Processing your request...</p>
+          </div>
+        </div>
+
         <h2>Book Your Private Jet Today</h2>
         <form id="booking-form">
           <label for="origin">Origin:</label>
@@ -67,8 +83,8 @@
             required
           />
           <label for="date">Departure Date:</label>
-          <input type="date" id="date" name="date" required />
-          <button type="submit">Request Quote</button>
+          <input class="date" type="date" id="date" name="date" required />
+          <button type="submit" class="cta">Request Quote</button>
         </form>
       </section>
       <div class="headers">

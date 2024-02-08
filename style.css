@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial;
   margin: 0;
   padding: 0;
 }
@@ -111,6 +111,9 @@ main {
 .booking-form {
   border: 1px solid #ddd;
   padding: 20px;
+}
+.cta {
+  max-width: max-content;
 }
 
 .booking-form label {
@@ -236,10 +239,19 @@ footer {
   margin: 20px;
   padding: 20px;
   text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 20px); /* Adjust width as needed */
 }
 .section img {
-  width: 60%;
+  width: 100%;
   border-radius: 8px;
+}
+.section p {
+  color: #888;
 }
 .about-us {
   display: flex;
@@ -254,4 +266,53 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+} /* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {border-radius: 4px;
+  cursor: wait;
+  gap: 2rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be wider or narrower */
+  text-align: center;
+}
+.custom-loader {
+  margin-top: 1.5rem;
+  --d: 22px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: #4caf50;
+  box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0,
+    calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 1px,
+    calc(0 * var(--d)) calc(1 * var(--d)) 0 2px,
+    calc(-0.707 * var(--d)) calc(0.707 * var(--d)) 0 3px,
+    calc(-1 * var(--d)) calc(0 * var(--d)) 0 4px,
+    calc(-0.707 * var(--d)) calc(-0.707 * var(--d)) 0 5px,
+    calc(0 * var(--d)) calc(-1 * var(--d)) 0 6px;
+  animation: s7 1s infinite steps(8);
+}
+
+@keyframes s7 {
+  100% {
+    transform: rotate(1turn);
+  }
 }
